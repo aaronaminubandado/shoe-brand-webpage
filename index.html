@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+            <nav>
+                <svg class ="close" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier"><path fill="#000000" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z">
+                    </path></g>
+                </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Athletes</a></li>
+                </ul>
+
+            </nav>
+            <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_429_11066)">
+                <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="lightgrey" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_429_11066">
+                <rect width="24" height="24" fill="none" transform="translate(0 0.000915527)"/>
+                </clipPath>
+                </defs>
+            </svg>
+        </header>
+
+        <section class="hero">
+            <h1>Regain your confidence on the floor</h1>
+
+            <p class="subhead">A shoe built with the purpose of taking your game to the next level</p>
+            
+            <svg class="down-arrow" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#474747">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier"> <path d="M18.0699 14.4299L11.9999 20.4999L5.92993 14.4299" stroke="#ffffff" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path d="M12 3.5V20.33" stroke="#ffffff" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                
+                </svg>
+        </section>
+        
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius id nisi quam libero, voluptatum perferendis.</p>
+                </div>
+                <img src="images/shoe2.jpg" alt="Another shoe">
+            </div>
+            <div class="feature flip">
+                <div class="content">
+                    <p class="title">Comfort</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius id nisi quam libero, voluptatum perferendis.</p>
+                </div>
+                <img src="images/shoe3.jpg" alt="Another shoe">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Style</p>
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius id nisi quam libero, voluptatum perferendis.</p>
+                </div>
+                <img src="images/shoe4.jpg" alt="Another shoe">
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close= document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+
+</body>
+</html>
